@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start; /* Alinea logo+hora y título horizontalmente */
+    gap: 20px; /* Espacio entre logo+hora y título */
+}
+
+/* Contenedor vertical del logo y la hora */
+.logo-hora-container {
+    display: flex;
+    flex-direction: column; /* Logo arriba, hora debajo */
+    align-items: center;    /* Centrado de la hora debajo del logo */
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+}
+
+/* Hora debajo del logo */
+.hora {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+/* Título al lado del logo */
+.titulo {
+    margin: 0;
+    align-self: center; /* Centra verticalmente respecto al logo */
+}
+
+/* Contenedor principal con columnas */
+.contenedor {
+    display: flex;
+    padding: 20px;
+}
+
+/* Columna izquierda: artículos */
+main {
+    flex: 3;
+}
+
+article {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Columna derecha: menú lateral */
+aside {
+    flex: 1;
+    margin-left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Logotipo de cumplimiento CSS3 */
+.estandares {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.css3-logo {
+    width: 40px;
+    height: auto;
+}
