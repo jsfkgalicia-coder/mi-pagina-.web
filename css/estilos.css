@@ -106,3 +106,41 @@ footer {
     width: 40px;
     height: auto;
 }
+.noticia-completa {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.noticia-completa h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.volver:hover {
+    background: #555;
+}
+.imagen-noticia {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.imagen-noticia {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
