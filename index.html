@@ -4,74 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+
+    <!-- SEO mejorado -->
+    <meta name="description" content="Noticias frescas sobre actualidad, deportes y política en tiempo real.">
+
+    <title>Noticias Frescas | Última hora en política, deportes y actualidad</title>
 
     <!-- Verificación del sitio -->
     <meta name="google-site-verification" content="CODIGO_DE_VERIFICACION">
 
-    <!-- Conexión con la hoja de estilos -->
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- Script JavaScript -->
+    <!-- Scroll suave + hover artículos -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .articulo-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .articulo-link article {
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .articulo-link article:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+
+    <!-- Script -->
     <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-<!-- Encabezado con logo -->
+<!-- Encabezado -->
 <header>
-    <!-- Contenedor vertical: logo arriba y hora debajo -->
     <div class="logo-hora-container">
-        <img src="img/logo.png" alt="Logo de Noticias Frescas" class="logo">
-        <div id="hora-actual" class="hora"></div>
+        <img src="img/logo.png" alt="Logo del sitio Noticias Frescas" class="logo" loading="lazy">
+        <time id="hora-actual" class="hora"></time>
     </div>
 
-    <!-- Título de la página al lado derecho del logo -->
     <h1 class="titulo">Noticias Frescas</h1>
 </header>
-<!-- Contenedor principal con dos columnas -->
-<div class="contenedor">
 
-    <!-- Columna izquierda: artículos -->
+<!-- Contenedor principal -->
+<section class="contenedor">
+
     <main>
 
-        <article>
-            <h2>Guerra en Oriente Medio</h2>
-            <p>Desglose actual sobre el estado de las tensiones entre Israel e Irán.</p>
-        </article>
+        <!-- NOTICIA 1 -->
+        <a href="guerra-oriente.html" class="articulo-link">
+            <article>
+                <header>
+                    <h2>Guerra en Oriente Medio</h2>
+                </header>
+                <p>Desglose actual sobre el estado de las tensiones entre Israel e Irán.</p>
+            </article>
+        </a>
 
-        <article>
-            <h2>D. Trump amenaza a España</h2>
-            <p>El presidente de EE. UU. amenaza con cortar lazos comerciales con el país europeo.</p>
-        </article>
+        <!-- NOTICIA 2 -->
+        <a href="trump-espana.html" class="articulo-link">
+            <article>
+                <header>
+                    <h2>D. Trump amenaza a España</h2>
+                </header>
+                <p>El presidente de EE. UU. amenaza con cortar lazos comerciales con el país europeo.</p>
+            </article>
+        </a>
 
-        <article>
-            <h2>Celta de Vigo vs Real Madrid</h2>
-            <p>El club blanco se juega la liga en Balaídos tras la derrota en el Bernabéu.</p>
-        </article>
+        <!-- NOTICIA 3 -->
+        <a href="real-madrid-girona.html" class="articulo-link">
+            <article>
+                <header>
+                    <h2>El Real Madrid tira la liga ante el Girona</h2>
+                </header>
+                <p>El club blanco se complica la liga tras una derrota inesperada.</p>
+            </article>
+        </a>
 
     </main>
 
-    <!-- Columna derecha: menú -->
+    <!-- MENÚ LATERAL CORREGIDO (con enlaces útiles) -->
     <aside>
-        <nav>
+        <nav aria-label="Menú principal">
             <h3>Menú</h3>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
+          
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </aside>
 
-</div>
+</section>
 
-<!-- Pie de página -->
+<!-- PIE DE PÁGINA -->
 <footer>
     <p>Lo que se publique, tomarlo con pinzas.</p>
+
     <div class="estandares">
-        <img src="img/css3-logo.png" alt="Cumple estándares CSS3" class="css3-logo">
+        <img src="img/css3-logo.png" alt="Logo de validación CSS3" class="css3-logo" loading="lazy">
         <span>Validado con CSS3</span>
     </div>
 </footer>
